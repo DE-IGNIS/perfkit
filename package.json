@@ -1,0 +1,38 @@
+{
+  "name": "perfkit",
+  "version": "0.1.0",
+  "description": "Zero-dependency benchmarking, memory profiling, and CPU tracing for Node.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx/esm src/tests/runner.ts",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "benchmark",
+    "profiling",
+    "performance",
+    "memory",
+    "cpu",
+    "nodejs"
+  ],
+  "author": "matrixmind",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.3.5"
+  }
+}
