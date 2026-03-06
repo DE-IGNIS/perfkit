@@ -33,6 +33,7 @@
   "author": "matrixmind",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "tsx": "^4.21.0"
   }
 }
